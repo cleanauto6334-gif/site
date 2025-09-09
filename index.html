@@ -1,6 +1,6 @@
 <!-- Chosen Palette: Bleu Professionnel & Gris Ardoise -->
-<!-- Application Structure Plan: La structure du site en une seule page est conservée. La section des services a été modifiée pour accentuer la valeur de la "Formule Express" en mettant en avant le service prioritaire le jour même. Cette modification clarifie la montée en gamme et justifie le supplément de prix, rendant l'offre plus attractive pour les clients pressés. -->
-<!-- Visualization & Content Choices: Les formules sont présentées en cartes pour une comparaison facile (Goal: Compare -> Viz: Cartes de service). La "Formule Express" a été enrichie avec un badge et un texte explicatif pour mettre en avant la rapidité (Goal: Upsell -> Viz: Carte premium améliorée). Cette clarification rend la proposition de valeur de chaque formule plus distincte et aide l'utilisateur à choisir. -->
+<!-- Application Structure Plan: La structure du site en une seule page est conservée. Une nouvelle section "Nos Outils Professionnels" a été ajoutée pour renforcer la crédibilité et justifier la qualité du service. Elle est placée logiquement entre "Pourquoi nous choisir" et "Notre Qualité" (produits). Le menu a été mis à jour en conséquence. Cette architecture finale offre un parcours utilisateur complet : accroche, raisons de choisir, preuve par le matériel, preuve par les produits, et enfin les offres. -->
+<!-- Visualization & Content Choices: La nouvelle section "Outils" utilise une grille de 3 cartes avec icônes et texte pour présenter le matériel clé (Goal: Build Trust/Inform -> Viz: Section icones+texte). Cette approche est visuellement cohérente avec le reste du site. Les autres sections restent inchangées. -->
 <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
@@ -33,6 +33,7 @@
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#pourquoi" class="text-slate-600 hover:text-blue-600 transition-colors">Pourquoi nous ?</a>
+                <a href="#outils" class="text-slate-600 hover:text-blue-600 transition-colors">Nos Outils</a>
                 <a href="#qualite" class="text-slate-600 hover:text-blue-600 transition-colors">Notre Qualité</a>
                 <a href="#services" class="text-slate-600 hover:text-blue-600 transition-colors">Nos Services</a>
                 <a href="#galerie" class="text-slate-600 hover:text-blue-600 transition-colors">Galerie</a>
@@ -48,6 +49,7 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="#pourquoi" class="block text-slate-600 hover:text-blue-600 py-2">Pourquoi nous ?</a>
+            <a href="#outils" class="block text-slate-600 hover:text-blue-600 py-2">Nos Outils</a>
             <a href="#qualite" class="block text-slate-600 hover:text-blue-600 py-2">Notre Qualité</a>
             <a href="#services" class="block text-slate-600 hover:text-blue-600 py-2">Nos Services</a>
             <a href="#galerie" class="block text-slate-600 hover:text-blue-600 py-2">Galerie</a>
@@ -96,9 +98,36 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Outils Section -->
+        <section id="outils" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Outils Professionnels</h2>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Un résultat impeccable nécessite un matériel de pointe. Nous sommes équipés pour garantir un nettoyage en profondeur.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center max-w-5xl mx-auto">
+                    <div class="p-6">
+                        <div class="text-5xl text-blue-600 mb-4 inline-block">💨</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Injecteur-Extracteur</h3>
+                        <p class="text-slate-600">Essentiel pour le nettoyage des tissus. Il pulvérise une solution nettoyante au cœur des fibres et aspire la saleté, les taches et les allergènes.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-5xl text-blue-600 mb-4 inline-block">🌊</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Nettoyeur Haute Pression</h3>
+                        <p class="text-slate-600">Parfait pour le prélavage, il retire le film routier et les saletés tenaces sans contact, pour un lavage extérieur sans risque de rayures.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-5xl text-blue-600 mb-4 inline-block">🖌️</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Matériel de Detailing</h3>
+                        <p class="text-slate-600">Pinceaux de précision, brosses adaptées, gants de lavage doux et microfibres de séchage haute densité pour une finition parfaite dans les moindres recoins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Qualité Produits Section -->
-        <section id="qualite" class="py-20 bg-slate-50">
+        <section id="qualite" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Notre Engagement Qualité</h2>
@@ -120,7 +149,7 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-20 bg-white">
+        <section id="services" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Formules, Simples et Transparentes</h2>
@@ -130,24 +159,24 @@
                     <!-- Service Card 1: Extérieur -->
                     <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col text-center border-t-4 border-slate-300 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Nettoyage Extérieur</h3>
-                        <p class="text-4xl font-extrabold text-slate-900 mb-4">30 €</p>
+                        <p class="text-4xl font-extrabold text-slate-900 mb-4">30€</p>
                         <ul class="text-left space-y-2 text-slate-600 mb-8 flex-grow">
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Lavage carrosserie</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Séchage sans trace</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Nettoyage jantes & pneus</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Nettoyage vitres extérieures</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Prélavage & Lavage manuel (technique 2 seaux)</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Nettoyage approfondi des jantes et pneus</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Séchage microfibre anti-trace</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Nettoyage des vitres</span></li>
                         </ul>
                         <a href="#contact" class="mt-auto bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-300 transition-colors">Réserver</a>
                     </div>
                     <!-- Service Card 2: Intérieur -->
                     <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col text-center border-t-4 border-slate-300 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Nettoyage Intérieur</h3>
-                        <p class="text-4xl font-extrabold text-slate-900 mb-4">40 €</p>
+                        <p class="text-4xl font-extrabold text-slate-900 mb-4">40€</p>
                          <ul class="text-left space-y-2 text-slate-600 mb-8 flex-grow">
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Aspiration complète</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Nettoyage des plastiques</li>
-                             <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Dépoussiérage habitacle</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">✔</span>Nettoyage vitres intérieures</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Aspiration poussée de l'habitacle et du coffre</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Nettoyage et soin des plastiques</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Dépoussiérage des grilles d'aération</span></li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">✔</span><span>Nettoyage des vitres</span></li>
                         </ul>
                         <a href="#contact" class="mt-auto bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-300 transition-colors">Réserver</a>
                     </div>
@@ -155,7 +184,7 @@
                     <div class="bg-blue-600 text-white rounded-lg shadow-2xl p-8 flex flex-col text-center border-t-4 border-blue-400 transform md:scale-105">
                         <span class="bg-white text-blue-600 font-semibold px-3 py-1 rounded-full text-sm self-center mb-4">LE MEILLEUR CHOIX</span>
                         <h3 class="text-xl font-bold mb-2">Formule Complète</h3>
-                        <p class="text-4xl font-extrabold mb-4">50 €</p>
+                        <p class="text-4xl font-extrabold mb-4">50€</p>
                         <ul class="text-left space-y-2 mb-8 flex-grow">
                             <li class="flex items-center font-bold">✔ TOUT du Nettoyage Extérieur</li>
                             <li class="flex items-center font-bold">✔ TOUT du Nettoyage Intérieur</li>
@@ -167,7 +196,7 @@
                     <div class="bg-slate-900 text-white rounded-lg shadow-lg p-8 flex flex-col text-center border-t-4 border-yellow-400 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                         <span class="bg-yellow-400 text-slate-900 font-semibold px-3 py-1 rounded-full text-sm self-center mb-4">SERVICE PRIORITAIRE</span>
                         <h3 class="text-xl font-bold mb-2">Formule Express</h3>
-                        <p class="text-4xl font-extrabold mb-4">60 €</p>
+                        <p class="text-4xl font-extrabold mb-4">60€</p>
                         <p class="text-slate-300 mb-4 text-sm font-semibold">Besoin d'un nettoyage rapide ? Nous intervenons **dans la journée** (selon disponibilités).</p>
                          <ul class="text-left space-y-2 text-slate-300 mb-8 flex-grow">
                            <li class="flex items-center">✔ Tout de la Formule Complète</li>
@@ -204,7 +233,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold">Prêt à retrouver une voiture impeccable ?</h2>
                 <p class="mt-4 text-slate-300 max-w-2xl mx-auto mb-8">Contactez-nous dès aujourd'hui pour poser vos questions ou pour réserver votre rendez-vous. C'est simple et rapide !</p>
                 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                    <a href="tel:[0627167478]" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-transform hover:scale-105 inline-block w-full md:w-auto">
+                    <a href="tel:0627167478" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-transform hover:scale-105 inline-block w-full md:w-auto">
                         Appelez-nous : 06 27 16 74 78
                     </a>
                     <p class="text-slate-300">ou suivez-nous sur les réseaux !</p>
@@ -268,7 +297,4 @@
 
 </body>
 </html>
-
-
-
 
