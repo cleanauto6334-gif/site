@@ -1,6 +1,6 @@
 <!-- Chosen Palette: Bleu Professionnel & Gris Ardoise -->
-<!-- Application Structure Plan: La structure du site en une seule page est conservée. Une nouvelle section "Nos Outils Professionnels" a été ajoutée pour renforcer la crédibilité et justifier la qualité du service. Elle est placée logiquement entre "Pourquoi nous choisir" et "Notre Qualité" (produits). Le menu a été mis à jour en conséquence. Cette architecture finale offre un parcours utilisateur complet : accroche, raisons de choisir, preuve par le matériel, preuve par les produits, et enfin les offres. -->
-<!-- Visualization & Content Choices: La nouvelle section "Outils" utilise une grille de 3 cartes avec icônes et texte pour présenter le matériel clé (Goal: Build Trust/Inform -> Viz: Section icones+texte). Cette approche est visuellement cohérente avec le reste du site. Les autres sections restent inchangées. -->
+<!-- Application Structure Plan: La structure du site en une seule page est conservée. Une nouvelle section "Offre Entreprises & CSE" a été ajoutée pour cibler le marché B2B, placée logiquement après les services pour particuliers. La galerie a été mise à jour avec de vraies photos pour renforcer la crédibilité. Le menu a été mis à jour en conséquence. L'architecture propose désormais un parcours complet : particuliers -> entreprises -> preuve du travail. -->
+<!-- Visualization & Content Choices: La nouvelle section "Entreprises" utilise une mise en page professionnelle avec des icônes pour expliquer les bénéfices (Goal: Inform/Generate B2B Leads -> Viz: Section icones+texte). La galerie utilise maintenant des images réelles pour prouver la qualité du service (Goal: Build Trust -> Viz: Real Before/After Photos). -->
 <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
@@ -33,9 +33,8 @@
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#pourquoi" class="text-slate-600 hover:text-blue-600 transition-colors">Pourquoi nous ?</a>
-                <a href="#outils" class="text-slate-600 hover:text-blue-600 transition-colors">Nos Outils</a>
-                <a href="#qualite" class="text-slate-600 hover:text-blue-600 transition-colors">Notre Qualité</a>
                 <a href="#services" class="text-slate-600 hover:text-blue-600 transition-colors">Nos Services</a>
+                <a href="#entreprise" class="text-slate-600 hover:text-blue-600 transition-colors">Offre Entreprises</a>
                 <a href="#galerie" class="text-slate-600 hover:text-blue-600 transition-colors">Galerie</a>
                 <a href="#contact" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
             </div>
@@ -49,9 +48,8 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="#pourquoi" class="block text-slate-600 hover:text-blue-600 py-2">Pourquoi nous ?</a>
-            <a href="#outils" class="block text-slate-600 hover:text-blue-600 py-2">Nos Outils</a>
-            <a href="#qualite" class="block text-slate-600 hover:text-blue-600 py-2">Notre Qualité</a>
             <a href="#services" class="block text-slate-600 hover:text-blue-600 py-2">Nos Services</a>
+            <a href="#entreprise" class="block text-slate-600 hover:text-blue-600 py-2">Offre Entreprises</a>
             <a href="#galerie" class="block text-slate-600 hover:text-blue-600 py-2">Galerie</a>
             <a href="#contact" class="block text-slate-600 hover:text-blue-600 py-2">Contact</a>
             <a href="#contact" class="block bg-blue-600 text-white text-center mt-2 px-5 py-2 rounded-lg font-semibold hover:bg-blue-700">
@@ -99,60 +97,11 @@
             </div>
         </section>
         
-        <!-- Outils Section -->
-        <section id="outils" class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Outils Professionnels</h2>
-                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Un résultat impeccable nécessite un matériel de pointe. Nous sommes équipés pour garantir un nettoyage en profondeur.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center max-w-5xl mx-auto">
-                    <div class="p-6">
-                        <div class="text-5xl text-blue-600 mb-4 inline-block">💨</div>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Injecteur-Extracteur</h3>
-                        <p class="text-slate-600">Essentiel pour le nettoyage des tissus. Il pulvérise une solution nettoyante au cœur des fibres et aspire la saleté, les taches et les allergènes.</p>
-                    </div>
-                    <div class="p-6">
-                        <div class="text-5xl text-blue-600 mb-4 inline-block">🌊</div>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Nettoyeur Haute Pression</h3>
-                        <p class="text-slate-600">Parfait pour le prélavage, il retire le film routier et les saletés tenaces sans contact, pour un lavage extérieur sans risque de rayures.</p>
-                    </div>
-                    <div class="p-6">
-                        <div class="text-5xl text-blue-600 mb-4 inline-block">🖌️</div>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Matériel de Detailing</h3>
-                        <p class="text-slate-600">Pinceaux de précision, brosses adaptées, gants de lavage doux et microfibres de séchage haute densité pour une finition parfaite dans les moindres recoins.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Qualité Produits Section -->
-        <section id="qualite" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Notre Engagement Qualité</h2>
-                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Nous sélectionnons des produits de detailing professionnels pour un résultat exceptionnel et respectueux de votre véhicule.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-                    <div class="p-6 text-center">
-                        <div class="text-5xl text-blue-600 mb-4 inline-block">💧</div>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Shampoings pH Neutre</h3>
-                        <p class="text-slate-600">Nous utilisons des shampoings au pH neutre qui nettoient en profondeur sans agresser le vernis de votre carrosserie.</p>
-                    </div>
-                    <div class="p-6 text-center">
-                        <div class="text-5xl text-blue-600 mb-4 inline-block">🌿</div>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900">Nettoyants Efficaces et Sûrs</h3>
-                        <p class="text-slate-600">Nos nettoyants pour jantes, plastiques et tissus sont des formules puissantes contre la saleté, mais sûres pour les matériaux de votre voiture.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Services Section -->
         <section id="services" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Formules, Simples et Transparentes</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Formules pour Particuliers</h2>
                     <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Des solutions claires et adaptées à chaque besoin, pour une voiture toujours impeccable.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -209,20 +158,68 @@
             </div>
         </section>
 
+        <!-- Offre Entreprise Section -->
+        <section id="entreprise" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Offre Entreprises & CSE</h2>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Un service sur-mesure pour valoriser votre flotte de véhicules et offrir un avantage unique à vos collaborateurs.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Pourquoi nous choisir pour votre entreprise ?</h3>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 mt-1">💼</span>
+                                <div>
+                                    <h4 class="font-semibold">Image de Marque Impeccable</h4>
+                                    <p>Des véhicules de société propres renforcent votre image de marque auprès de vos clients et partenaires.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 mt-1">⏰</span>
+                                <div>
+                                    <h4 class="font-semibold">Gain de Temps et Productivité</h4>
+                                    <p>Nous intervenons directement sur votre parking. Vos employés ne perdent plus de temps à la station de lavage.</p>
+                                </div>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 mt-1">🎁</span>
+                                <div>
+                                    <h4 class="font-semibold">Avantage pour vos Salariés (CSE)</h4>
+                                    <p>Proposez un service de nettoyage à tarif préférentiel. Un avantage apprécié qui améliore le bien-être au travail.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-slate-100 rounded-lg">
+                         <h3 class="text-xl font-bold mb-4 text-slate-900">Nos solutions professionnelles :</h3>
+                         <p class="text-slate-600 mb-4">Que ce soit pour un entretien régulier de votre flotte ou pour une journée "bien-être" pour vos salariés, nous avons une solution.</p>
+                         <ul class="text-slate-700 space-y-2 mb-6">
+                             <li>✔ Tarifs dégressifs sur volume</li>
+                             <li>✔ Planification flexible</li>
+                             <li>✔ Facturation centralisée</li>
+                         </ul>
+                         <a href="#contact" class="w-full text-center bg-slate-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-900 transition-colors block">Contactez-nous pour un devis sur mesure</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Galerie Section -->
-        <section id="galerie" class="py-20 bg-white">
+        <section id="galerie" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nos Réalisations Avant / Après</h2>
                     <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Une image vaut mille mots. Voyez par vous-même la transformation.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <img src="https://placehold.co/600x400/334155/E2E8F0?text=Avant" alt="Avant - Siège sale" class="rounded-lg shadow-md w-full h-full object-cover">
-                    <img src="https://placehold.co/600x400/2563EB/FFFFFF?text=Après" alt="Après - Siège propre" class="rounded-lg shadow-md w-full h-full object-cover">
-                    <img src="https://placehold.co/600x400/334155/E2E8F0?text=Avant" alt="Avant - Jante sale" class="rounded-lg shadow-md w-full h-full object-cover">
-                    <img src="https://placehold.co/600x400/2563EB/FFFFFF?text=Après" alt="Après - Jante propre" class="rounded-lg shadow-md w-full h-full object-cover">
-                    <img src="https://placehold.co/600x400/334155/E2E8F0?text=Avant" alt="Avant - Carrosserie terne" class="rounded-lg shadow-md w-full h-full object-cover">
-                    <img src="https://placehold.co/600x400/2563EB/FFFFFF?text=Après" alt="Après - Carrosserie brillante" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1551522435-aee0de41f21d?q=80&w=1974&auto=format&fit=crop" alt="Après - Intérieur de voiture propre et détaillé" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1617058814424-c1e3a6a2c3ea?q=80&w=1964&auto=format&fit=crop" alt="Après - Jante de voiture propre et brillante" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1589321518341-331c19af394a?q=80&w=1974&auto=format&fit=crop" alt="Avant - Intérieur de voiture sale et poussiéreux" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1599423300689-7681338a14b5?q=80&w=1974&auto=format&fit=crop" alt="Après - Carrosserie de voiture brillante après lavage" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1603581512419-0797a15340fa?q=80&w=1974&auto=format&fit=crop" alt="Avant - Jante de voiture couverte de poussière de frein" class="rounded-lg shadow-md w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1541348263662-e11667d402af?q=80&w=1974&auto=format&fit=crop" alt="Avant - Carrosserie de voiture sale et terne" class="rounded-lg shadow-md w-full h-full object-cover">
                 </div>
             </div>
         </section>
@@ -297,5 +294,4 @@
 
 </body>
 </html>
-
 
